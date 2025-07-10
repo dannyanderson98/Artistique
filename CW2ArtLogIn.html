@@ -1,0 +1,184 @@
+<?phP
+
+$servername = "localhost";
+$E-Mail = "E-Mail";
+$Password = "Password";
+
+// Create connection
+$conn = new mysqli($servername, $E-Mail, $Password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
+?>
+
+
+<!DOCTYPE HTML>
+<html>
+<header>
+<div class="header">
+</div>
+<link rel="stylesheet" href="StyleSheet.css">
+<center><h1> Artistique </h1></center>
+</header>
+<h2>Come Join Us</h2>
+
+<style>
+a:link, a:visited {
+  background-color: white;
+  border-radius: 2px;
+  color: darkslategrey;
+  border: 1px solid grey;
+  padding:5px 10px;
+  text-decoration-line: none;
+  text-align: left;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: grey;
+  border-radius: 2px;
+  color: darkslategrey;
+  color: white;
+}
+</style>
+<div class = "bottom">
+  <div> <div class = "menu"> </div>
+	<left-side><nav>
+<center><a href="CW2ArtHomePage.html">Home</a></center>
+<center><a href="CW2ArtProducts.html">Our Products</a></center> 
+<center><a href="CW2ArtRegister.html">Register</a></center>
+<center><a href="CW2ArtShoppingCart.html">My Cart</a></center>
+</nav>
+</left-side>
+</div> <!-- menu -->
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Monaco, sans-serif;}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: grey;
+  font-family: Monaco, sans-serif;
+  color: white;
+  padding: 20px 30px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+	font-family: Monaco, sans-serif;}
+}
+
+
+.container {
+  padding: 16px;
+}
+
+boxspan.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+ {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /
+  background-color: grey; 
+  background-color: grey; 
+  padding-top: 60px;
+}
+
+content.box {
+  background-color: whitesmoke;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+</style>
+</head>
+<body>
+
+<h2>Welcome Back!</h2>
+  
+<h3> We've missed you please Log In</h3>
+	
+    <div class="container">
+      <label for="email"><b>E-Mail</b></label>
+      <input type="text" placeholder="Please Enter Your E-mail" name="E-mail" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Please Enter Your Password" name="Password" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="don't forget me"> Please don't forget me
+      </label>
+    </div>
+
+  </form>
+</div>
+
+
+
+</body>
+</html>
+
+
+<hr>
+
+</hr>
+
+<center><i>Artistique 2019</i></center>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,221 @@
+
+<php
+$servername = "localhost";
+$E-Mail = "E-Mail";
+$Password = "Password";
+$dbname = "Artistique_Customer";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "INSERT INTO Artistique_Customer (E-Mail, Password)
+VALUES ('Dan', 'Anderson', 'dan@example.com')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+
+/php> 
+
+<!DOCTYPE HTML>
+<html>
+<header>
+<div class="header">
+</div>
+<link rel="stylesheet" href="StyleSheet.css">
+<center><h1> Artistique </h1></center>
+</header>
+<h2>Come Join Us</h2>
+	
+<style>
+a:link, a:visited {
+  background-color: white;
+  border-radius: 2px;
+  color: darkslategrey;
+  border: 1px solid grey;
+  padding:5px 10px;
+  text-decoration-line: none;
+  text-align: left;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: grey;
+  color: white;
+}
+</style>
+<div class = "bottom">
+  <div> <div class = "menu"> </div>
+	<left-side><nav>
+<center><a href="CW2ArtHomePage.html">Home</a></center>
+<center><a href="CW2ArtProducts.html">Our Products</a></center>
+<center><a href="CW2ArtLogIn.html">Log In</a></center>
+<center><a href="CW2ArtShoppingCart.html">My Cart</a></center>
+</nav>
+</left-side>
+</div> 
+<h3>New here? Why not Sign Up?</h3>
+<p>Please register your details below if your already with us please Log In </p>
+
+<h3> Please register your account here </h3>
+
+<center><form action>
+
+<div class "container">
+
+<h1>Please Join Us here:</h1>
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Monaco, sans-serif;}
+
+input[type=text], input[type=e-mail] {
+  width: 100%;
+  font-family: Monaco, sans-serif;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+	
+input[type=text], input[type=password] {
+  width: 100%;
+  font-family: Monaco, sans-serif;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=confirm password] {
+  width: 100%;
+  font-family: Monaco, sans-serif;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+	
+
+	
+button {
+  background-color: grey;
+  font-family: Monaco, sans-serif;
+  color: white;
+  padding: 20px 30px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+	font-family: Monaco, sans-serif;}
+}
+
+
+.container {
+  padding: 16px;
+  
+}
+
+boxspan.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+ {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /
+  background-color: grey; 
+  background-color: grey; 
+  padding-top: 60px;
+}
+
+content.box {
+  background-color: whitesmoke;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+</style>
+</head>
+
+<body>
+        <form action=“/register/customer” method=“get”>
+             <h3>  <select name=“title”></h3>
+                    <option value=“0” selected>
+                       Please select your title
+                    </option>
+                    <option value=“mr”>Mr</option>
+                    <option value=“miss”>Miss</option>
+                    <option value=“mrs”>Mrs</option>
+                    <option value=“ms”>Ms</option>
+              </select><br>
+
+   <h3> <label for=“Forename”><b>Forename</b></label></h3>
+    <input type=“forename” placeholder=“Enter Forename name=“Forename” required>
+
+ <h3> <label for=“Surname”><b>Surname</b></label> </h3> 
+    <input type=“surname” placeholder=“Enter Surname name=“Surname” required>
+
+ <h3> <label for=“Forename”><b>Forename</b></label> </h3>
+    <input type=“forename” placeholder=“Enter Forename name=“Forename” required>
+
+ <h3><label for=“E-Mail”><b>E-Mail</b></label></h3>
+   <input type=“e-mail” placeholder=“Enter E-mail Address=“E-Mail” required>
+
+  <h3><label for=“Password”><b>Password</b></label></h3>
+    <input type=“forename” placeholder=“Password”=name=“Password” required>
+
+  <h3> <label for=“Confirm Password”><b>Confirm Password</b></label></h3>
+    <input type=“confirm password” placeholder=“Confirm Password”=“Confirm Password” required>
+
+<center><h3>Before your account is created please agree to our terms and conditions <a href="CW2ArtTerms&Conditions.html">Terms & Conditions</a>.</h3>
+    <button type="Sign Up" class="SignUpBtn">Sign Up</button></li>
+		  
+     <input type="checkbox" checked="checked" name="don't forget me"> <h3> <a>I have read Artistiques Terms & Conditions </a></h3>
+
+
+</form>
+
+</html>
+
+
+
+
+
+
+<footer>
+<hr>
+
+
+
+<center><i>Artistique 2019</i></center>
+	
+</hr>
+
+</footer>
